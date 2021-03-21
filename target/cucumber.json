@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-14T15:31:53.307Z",
+        "start_timestamp": "2021-03-21T16:11:24.348Z",
         "before": [
           {
             "result": {
-              "duration": 4870842000,
+              "duration": 4463211000,
               "status": "passed"
             },
             "match": {
@@ -15,18 +15,18 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Login with valid email and password",
+        "line": 12,
+        "name": "Login with invalid email and valid password",
         "description": "",
-        "id": "login;login-with-valid-email-and-password",
+        "id": "login;login-with-invalid-email-and-valid-password",
         "after": [
           {
             "result": {
-              "duration": 22000,
+              "duration": 1184000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDef.Hook.tearDown()"
+              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -35,15 +35,74 @@
         "steps": [
           {
             "result": {
-              "duration": 89000,
+              "duration": 20687000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 13,
             "name": "I am at talentTEK Home Page",
             "match": {
               "location": "stepDef.Login_steps.iAmAtTalentTEKHomePage()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185122000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter invalid email address",
+            "match": {
+              "location": "stepDef.Login_steps.iEnterInvalidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73173000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepDef.Login_steps.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89608000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "stepDef.Login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77376000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I will verify I didn\u0027t successfully logged into existing account",
+            "match": {
+              "location": "stepDef.Login_steps.iWillVerifyIDidnTSuccessfullyLoggedIntoExistingAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@login"
           }
         ]
       }

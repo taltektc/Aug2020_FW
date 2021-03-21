@@ -1,9 +1,8 @@
 package base;
 
 public class TestData {
-    // keep all test value in here so that in be reused
-    // if
-    // or.properties
-    // java class
-    // xl using POI - dependancy
+
+    // data
+    public static String global_studentEmail = "info@taltektc.com";
+    public static String global_studentPassword = "123456";
 }

@@ -31,7 +31,4 @@ public class Config {
         return driver;
     }
 
-    public void test(String x){
-
-    }
 }

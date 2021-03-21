@@ -3,6 +3,9 @@ package stepDef;
 import base.Config;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.util.Strings;
 
 public class Hook extends Config {
@@ -10,19 +13,16 @@ public class Hook extends Config {
     public static String url;
     public static String baseURL = System.getProperty("env");
     public static String browserType = System.getProperty("browser");
-    // default env and browser
-    public static String defaultBrowser = "ch";
-    public static String defaultEnv = "qa";
 
     // open browser
     @Before
     public void openBrowser(){
         // default code
         if (Strings.isNullOrEmpty(browserType)){
-            browserType=defaultBrowser;
+            browserType="ch";
         }
         if (Strings.isNullOrEmpty(baseURL)){
-            baseURL=defaultEnv;
+            baseURL="qa";
         }
         // main setup
         driver = initDriver(browserType);
@@ -41,14 +41,20 @@ public class Hook extends Config {
 
     }
 
-
-
-
     // close browser
     @After
-    public void tearDown(){
+    public void tearDown(Scenario scenario){
+        try{
+            if (scenario.isFailed()){
+                final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
+            }
+
+        } catch (Exception e){
+            System.out.println(e);
+        }
         //driver.close();
         //driver.quit();
     }
-    // screenshot if test fail
+
 }
