@@ -8,9 +8,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Config {
-    // To align the code in mac is cmd+a and then cmd+opt+l
-    // a main setup of the framework
-    // Init WebDriver
     public static WebDriver driver;
 
     // setup browser (chrome, firefox, ie, safari, opera)

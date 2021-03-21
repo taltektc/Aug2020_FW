@@ -3,11 +3,112 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-21T16:11:24.348Z",
+        "start_timestamp": "2021-03-21T16:25:07.327Z",
         "before": [
           {
             "result": {
-              "duration": 4463211000,
+              "duration": 3803130000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid email and password",
+        "description": "",
+        "id": "login;login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 906000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21409000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at talentTEK Home Page",
+            "match": {
+              "location": "stepDef.Login_steps.iAmAtTalentTEKHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 226097000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter valid email address",
+            "match": {
+              "location": "stepDef.Login_steps.iEnterValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79200000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid password",
+            "match": {
+              "location": "stepDef.Login_steps.iEnterValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74362000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Log In button",
+            "match": {
+              "location": "stepDef.Login_steps.iClickOnLogInButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 590797000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I will verify I successfully logged into my existing account",
+            "match": {
+              "location": "stepDef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T16:25:12.138Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2339277000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +123,7 @@
         "after": [
           {
             "result": {
-              "duration": 1184000,
+              "duration": 45000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +136,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20687000,
+              "duration": 5856000,
               "status": "passed"
             },
             "line": 13,
@@ -47,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 185122000,
+              "duration": 175280000,
               "status": "passed"
             },
             "line": 14,
@@ -59,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 73173000,
+              "duration": 64774000,
               "status": "passed"
             },
             "line": 15,
@@ -71,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 89608000,
+              "duration": 77664000,
               "status": "passed"
             },
             "line": 16,
@@ -83,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 77376000,
+              "duration": 105557000,
               "status": "passed"
             },
             "line": 17,

@@ -39,7 +39,8 @@ public class Login_page{
     }
     public void invalidErrorMessage(){
         String exp = "You have entered an incorrect email or student Id.";
-        String act = invalidEmailOrIdErrorMsg.getText();
+        String act = invalidEmailOrIdErrorMsg.getText().substring(1);
+        System.out.println("invalid email ==> " +act);
         Assert.assertEquals(act, exp);
 
     }
