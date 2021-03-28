@@ -11,4 +11,11 @@ public class Profile_steps extends Config {
     public void iWillVerifyISuccessfullyLoggedIntoMyExistingAccount() {
         profile.verifyIamInProfilePage();
     }
+
+
+    @Then("I will verify my profile info")
+    public void iWillVerifyMyProfileInfo() {
+        profile.verifyIamInProfilePage();
+        profile.verifyStudentInfo();
+    }
 }

@@ -26,10 +26,13 @@ public class Login_page{
     // error message
     @FindBy(how = How.XPATH, using ="//*[@id='error_message']/div/h5")
     public WebElement invalidEmailOrIdErrorMsg;
+    // Create new account button
+    @FindBy(how = How.XPATH, using ="    //a[@class='new-account']")
+    public WebElement createNewAccountButton;
 
 
-    public void enterEmail(String studentEmail){
-        emailOrId.sendKeys(studentEmail);
+    public void enterEmailOrId(String studentEmailOrId){
+        emailOrId.sendKeys(studentEmailOrId);
     }
     public void enterPassword(String studentPassword){
         password.sendKeys(studentPassword);
@@ -43,6 +46,9 @@ public class Login_page{
         System.out.println("invalid email ==> " +act);
         Assert.assertEquals(act, exp);
 
+    }
+    public void clickCreateNewAccountButton(){
+        createNewAccountButton.click();
     }
 
 }

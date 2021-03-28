@@ -22,7 +22,7 @@ public class Hook extends Config {
             browserType="ch";
         }
         if (Strings.isNullOrEmpty(baseURL)){
-            baseURL="qa";
+            baseURL="stage";
         }
         // main setup
         driver = initDriver(browserType);
@@ -34,7 +34,7 @@ public class Hook extends Config {
                 url = "http://stage.taltektc.com";
                 break;
             case "prod":
-                url = "http://taltektc.com";
+                url = "http://prod.taltektc.com";
                 break;
         }
         driver.get(url);

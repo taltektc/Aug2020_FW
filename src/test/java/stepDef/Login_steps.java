@@ -21,7 +21,7 @@ public class Login_steps extends Config {
     @And("I enter valid email address")
     public void iEnterValidEmailAddress() {
         //Old method: driver.findElement (By.name("email")).sendKeys("info@taltektc.com");
-        login.enterEmail("info@taltektc.com");
+        login.enterEmailOrId("info@taltektc.com");
     }
 
     @And("I enter valid password")
@@ -37,11 +37,22 @@ public class Login_steps extends Config {
 
     @And("I enter invalid email address")
     public void iEnterInvalidEmailAddress() {
-        login.enterEmail("invalidEmail@gmail.com");
+        login.enterEmailOrId("invalidEmail@gmail.com");
     }
 
     @Then("I will verify I didn't successfully logged into existing account")
     public void iWillVerifyIDidnTSuccessfullyLoggedIntoExistingAccount() {
         login.invalidErrorMessage();
+    }
+
+    @And("I click on Create New Account button")
+    public void iClickOnCreateNewAccountButton() {
+        login.clickCreateNewAccountButton();
+    }
+
+    @And("I login with newly created studentId Info")
+    public void iLoginWithNewlyCreatedStudentIdInfo() {
+        login.enterEmailOrId(global_studentId);
+        login.enterPassword(global_studentPassword);
     }
 }

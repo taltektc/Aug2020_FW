@@ -5,9 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Test;
+
 import java.util.concurrent.TimeUnit;
 
-public class Config {
+public class Config extends TestData {
     public static WebDriver driver;
 
     // setup browser (chrome, firefox, ie, safari, opera)
