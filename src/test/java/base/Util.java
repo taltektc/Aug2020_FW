@@ -1,10 +1,14 @@
 package base;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import java.io.File;
+import java.io.IOException;
 
-import java.util.List;
 
 public class Util extends Config{
     // write selenium func that can be re-used
@@ -33,5 +37,9 @@ public class Util extends Config{
 //        List<WebElement> radioButtons = driver.findElements (By.xpath(locator));
 //        radioButtons.get(x).click();
 //    }
-
+    public static void screenShot (String screenshotName) throws IOException {
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\screenShots\\"+screenshotName+".png"));
+        System.out.println("Screenshot has been taken. Please go to: workspace-SpaFinder-screenShots Folder to view it. Thanks");
+    }
 }

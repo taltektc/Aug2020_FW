@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-28T16:13:23.090Z",
+        "start_timestamp": "2021-03-28T16:29:50.418Z",
         "before": [
           {
             "result": {
-              "duration": 2889960000,
+              "duration": 4013574000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 1893000,
+              "duration": 1013000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18214000,
+              "duration": 716393000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 182809000,
+              "duration": 175980000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 76478000,
+              "duration": 69533000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 61469000,
+              "duration": 96982000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 335585000,
+              "duration": 268260000,
               "status": "passed"
             },
             "line": 9,
@@ -100,110 +100,12 @@
           },
           {
             "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-28T16:13:26.674Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2333393000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.openBrowser()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Login with invalid email and valid password",
-        "description": "",
-        "id": "login;login-with-invalid-email-and-valid-password",
-        "after": [
-          {
-            "result": {
-              "duration": 64000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5419000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I am at talentTEK Home Page",
-            "match": {
-              "location": "stepDef.Login_steps.iAmAtTalentTEKHomePage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 199432000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I enter invalid email address",
-            "match": {
-              "location": "stepDef.Login_steps.iEnterInvalidEmailAddress()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70073000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I enter valid password",
-            "match": {
-              "location": "stepDef.Login_steps.iEnterValidPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 96176000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I click on Log In button",
-            "match": {
-              "location": "stepDef.Login_steps.iClickOnLogInButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 128613000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I will verify I didn\u0027t successfully logged into existing account",
-            "match": {
-              "location": "stepDef.Login_steps.iWillVerifyIDidnTSuccessfullyLoggedIntoExistingAccount()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
           },
           {
             "name": "@login"
+          },
+          {
+            "name": "@test"
           }
         ]
       }
@@ -213,297 +115,6 @@
     "id": "login",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/login/login.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2021-03-28T16:13:29.517Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2164004000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.openBrowser()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Sign up",
-        "description": "",
-        "id": "signup;sign-up",
-        "after": [
-          {
-            "result": {
-              "duration": 57000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5231000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I am at talentTEK Home Page",
-            "match": {
-              "location": "stepDef.Login_steps.iAmAtTalentTEKHomePage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 243627000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I click on Create New Account button",
-            "match": {
-              "location": "stepDef.Login_steps.iClickOnCreateNewAccountButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 916961000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I filled out the form with valid information",
-            "match": {
-              "location": "stepDef.Signup_steps.iFilledOutTheFormWithValidInformation()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 60987000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I clicked on agree checkbox",
-            "match": {
-              "location": "stepDef.Signup_steps.iClickedOnAgreeCheckbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40490000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click Create My Account button",
-            "match": {
-              "location": "stepDef.Signup_steps.iClickCreateMyAccountButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 131023000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I will verify Thank you message",
-            "match": {
-              "location": "stepDef.Signup_steps.iWillVerifyThankYouMessage()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@signup"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-28T16:13:33.091Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2113981000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.openBrowser()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Sign up and then sign back in with studentId",
-        "description": "",
-        "id": "signup;sign-up-and-then-sign-back-in-with-studentid",
-        "after": [
-          {
-            "result": {
-              "duration": 58000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4714000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I am at talentTEK Home Page",
-            "match": {
-              "location": "stepDef.Login_steps.iAmAtTalentTEKHomePage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 246276000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I click on Create New Account button",
-            "match": {
-              "location": "stepDef.Login_steps.iClickOnCreateNewAccountButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 829303000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I filled out the form with valid information",
-            "match": {
-              "location": "stepDef.Signup_steps.iFilledOutTheFormWithValidInformation()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41067000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I clicked on agree checkbox",
-            "match": {
-              "location": "stepDef.Signup_steps.iClickedOnAgreeCheckbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38834000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I click Create My Account button",
-            "match": {
-              "location": "stepDef.Signup_steps.iClickCreateMyAccountButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 128229000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I will store the dynamic studentId",
-            "match": {
-              "location": "stepDef.Signup_steps.iWillStoreTheDynamicStudentId()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 188828000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I click on Login Link",
-            "match": {
-              "location": "stepDef.Signup_steps.iClickOnLoginLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 151517000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I login with newly created studentId Info",
-            "match": {
-              "location": "stepDef.Login_steps.iLoginWithNewlyCreatedStudentIdInfo()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 80448000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I click on Log In button",
-            "match": {
-              "location": "stepDef.Login_steps.iClickOnLogInButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 267599000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I will verify my profile info",
-            "match": {
-              "location": "stepDef.Profile_steps.iWillVerifyMyProfileInfo()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@signup"
-          }
-        ]
-      }
-    ],
-    "name": "Signup",
-    "description": "",
-    "id": "signup",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/signup/signup.feature",
     "tags": []
   }
 ]

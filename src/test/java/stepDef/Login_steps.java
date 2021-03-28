@@ -1,6 +1,7 @@
 package stepDef;
 
 import base.Config;
+import base.Util;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,13 +10,16 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import pageObject.Login_page;
 
+import java.io.IOException;
+
 public class Login_steps extends Config {
     Login_page login = new Login_page(driver);
 
     @Given("I am at talentTEK Home Page")
-    public void iAmAtTalentTEKHomePage() {
+    public void iAmAtTalentTEKHomePage() throws IOException {
         // assertion - if i am actually came to login screen
         Assert.assertEquals(driver.getTitle(), "Sign In");
+        Util.screenShot("homepage");
     }
 
     @And("I enter valid email address")
