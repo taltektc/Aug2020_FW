@@ -59,4 +59,14 @@ public class Login_steps extends Config {
         login.enterEmailOrId(global_studentId);
         login.enterPassword(global_studentPassword);
     }
+
+    @And("I enter valid {string} Email")
+    public void iEnterValidEmail(String Email) {
+        login.enterEmailOrId(Email);
+    }
+
+    @And("I enter valid password {string}")
+    public void iEnterValidPassword(String password) {
+        login.enterPassword(password);
+    }
 }

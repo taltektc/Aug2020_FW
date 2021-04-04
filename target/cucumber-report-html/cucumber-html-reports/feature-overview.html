@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                5,
-                0,
-                0,
+                9,
+                2,
+                4,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 15) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                0
+                0,
+                2
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Aug2020_FW</td>
                           <td>1</td>
-                        <td>28 Mar 2021, 12:29</td>
+                        <td>04 Apr 2021, 11:19</td>
           </tr>
         </tbody>
       </table>
@@ -323,50 +323,50 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="file-src-test-java-features-login-login-feature.html">Login</a></td>
+        <td class="tagname"><a href="file-src-test-java-features-login-login_parameterization-feature.html">Login with Parameters</a></td>
         
-        <td  class="passed"    >1</td>
         <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >5</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+        <td      class="passed"    >9</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >4</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="1327148000">1s 327ms</td>
-        <td class="passed">Passed</td>
+        <td class="total">15</td>
+        <td class="duration" data-value="62828000000">1m 2s 828ms</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>1</td>
-            <td>1</td>
+            <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>9</td>
+      <td>2</td>
+      <td>4</td>
       <td>0</td>
-      <td>1</td>
-      <td>5</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td class="duration">1s 327ms</td>
+      <td>15</td>
+      <td class="duration">1m 2s 828ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
+      <td></td>
+      <td>60.00%</td>
+      <td>13.33%</td>
+      <td>26.67%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
       <td></td>
       <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

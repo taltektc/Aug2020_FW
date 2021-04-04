@@ -1,6 +1,7 @@
 package stepDef;
 
 import base.Config;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pageObject.Profile_page;
 
@@ -18,4 +19,6 @@ public class Profile_steps extends Config {
         profile.verifyIamInProfilePage();
         profile.verifyStudentInfo();
     }
+
+
 }

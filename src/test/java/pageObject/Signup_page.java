@@ -74,6 +74,27 @@ public class Signup_page extends Config {
 
 // ======================== Signup page functions ====================
 
+    public void enterFirstNamefromTable(String fName){
+        firstName.sendKeys(fName);
+        System.out.println("Student firstName ==>" + fName);
+    }
+    public void enterLastNamefromTable(String lName){
+        lastName.sendKeys(lName);
+        System.out.println("Student Last Name ==>" + lName);
+    }
+    public void enterEmailfromTable(String Email){
+        email.sendKeys(Email);
+        System.out.println("Student Email; ==>" + Email);
+    }
+    public void enterPasswordfromTable(String Password){
+        password.sendKeys(Password);
+        System.out.println("Student Password; ==>" + Password);
+    }
+    public void enterConfirmPasswordfromTable(String Cpassword){
+        confirmPassword.sendKeys(Cpassword);
+        System.out.println("Student Confirm Password; ==>" + Cpassword);
+    }
+
     public void enterFirstName(){
         TestData.global_studentFirstName = faker.name().firstName();
         firstName.sendKeys(global_studentFirstName);
