@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Aug2020_FW</td>
                           <td>1</td>
-                        <td>28 Mar 2021, 12:29</td>
+                        <td>18 Apr 2021, 10:47</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@login</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >5</td>
-          <td >0</td>
+          <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
-          <td class="duration" data-value="1327148000">1s 327ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="45798490000">45s 798ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -160,13 +160,13 @@ $(document).ready(function() {
        <a href="regression.html">@regression</a>
        <a href="smoke.html">@smoke</a>
        <a href="login.html">@login</a>
-       <a href="test.html">@test</a>
+       <a href="fail.html">@fail</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Login with valid email and password</span>
   
@@ -177,7 +177,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -198,7 +198,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.openBrowser()</span>
                         
-  <span class="lead-duration duration">4s 013ms</span>
+  <span class="lead-duration duration">3s 703ms</span>
 
           </div>
 
@@ -214,9 +214,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -226,14 +226,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at talentTEK Home Page</span>
   
-  <span class="lead-duration duration">716ms</span>
+  <span class="lead-duration duration">022ms</span>
 
   </div>
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter valid email address</span>
   
-  <span class="lead-duration duration">175ms</span>
+  <span class="lead-duration duration">362ms</span>
 
   </div>
 
@@ -273,9 +273,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter valid password</span>
+  <span class="name">I enter invalid password</span>
   
-  <span class="lead-duration duration">069ms</span>
+  <span class="lead-duration duration">219ms</span>
 
   </div>
 
@@ -296,7 +296,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I click on Log In button</span>
   
-  <span class="lead-duration duration">096ms</span>
+  <span class="lead-duration duration">157ms</span>
 
   </div>
 
@@ -313,15 +313,56 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Then</span>
   <span class="name">I will verify I successfully logged into my existing account</span>
   
-  <span class="lead-duration duration">268ms</span>
+  <span class="lead-duration duration">45s 036ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Error message</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/h5"}
+  (Session info: chrome=89.0.4389.128)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Hassans-MBP.lan', ip: '2603:7000:c803:f9f3:0:0:0:1415%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/04/g7v8kdcn5g3...}, goog:chromeOptions: {debuggerAddress: localhost:56755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 685df88ba36f97a17a293883c61a7f28
+*** Element info: {Using=xpath, value=//*[@id='profile_form']/h5}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at pageObject.Profile_page.verifyIamInProfilePage(Profile_page.java:33)
+	at stepDef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount(Profile_steps.java:13)
+	at ✽.I will verify I successfully logged into my existing account(file:///Users/hbhuiyan/Documents/TalentTEK/git/Aug2020_FW/src/test/java/features/login/login.feature:25)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -338,7 +379,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -350,13 +391,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">479ms</span>
 
           </div>
 
@@ -364,6 +405,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-529091517" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-529091517.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-529091517" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-529091517.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>

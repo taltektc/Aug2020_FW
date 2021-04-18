@@ -19,7 +19,7 @@ public class Login_steps extends Config {
     public void iAmAtTalentTEKHomePage() throws IOException {
         // assertion - if i am actually came to login screen
         Assert.assertEquals(driver.getTitle(), "Sign In");
-        Util.screenShot("homepage");
+       // Util.screenShot("homepage");
     }
 
     @And("I enter valid email address")
@@ -31,6 +31,11 @@ public class Login_steps extends Config {
     @And("I enter valid password")
     public void iEnterValidPassword() {
         login.enterPassword("123456");
+    }
+
+    @And("I enter invalid password")
+    public void iEnterInvalidPassword() {
+        login.enterPassword("12345336");
     }
 
     @When("I click on Log In button")

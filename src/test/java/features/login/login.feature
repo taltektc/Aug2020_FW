@@ -1,6 +1,6 @@
 Feature: Login
 
-  @regression @smoke @login @test
+  @regression @smoke @login
   Scenario: Login with valid email and password
     Given I am at talentTEK Home Page
     And I enter valid email address
@@ -15,3 +15,11 @@ Feature: Login
     And I enter valid password
     When I click on Log In button
     Then I will verify I didn't successfully logged into existing account
+
+  @regression @smoke @login @fail
+  Scenario: Login with valid email and password
+    Given I am at talentTEK Home Page
+    And I enter valid email address
+    And I enter invalid password
+    When I click on Log In button
+    Then I will verify I successfully logged into my existing account

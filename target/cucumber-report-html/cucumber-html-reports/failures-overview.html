@@ -77,7 +77,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Aug2020_FW</td>
                           <td>1</td>
-                        <td>04 Apr 2021, 11:19</td>
+                        <td>18 Apr 2021, 10:47</td>
           </tr>
         </tbody>
       </table>
@@ -102,12 +102,15 @@ $(document).ready(function() {
                       
 <div class="element">
       <div class="indention">
-      <a href="file-src-test-java-features-login-login_parameterization-feature.html">View Feature</a> <i>Login with Parameters</i>
+      <a href="file-src-test-java-features-login-login-feature.html">View Feature</a> <i>Login</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="Parameters.html">@Parameters</a>
+       <a href="regression.html">@regression</a>
+       <a href="smoke.html">@smoke</a>
+       <a href="login.html">@login</a>
+       <a href="fail.html">@fail</a>
   </div>
 
 
@@ -115,7 +118,7 @@ $(document).ready(function() {
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Sign up and then sign back in with studentId using Gherkin Datatable</span>
+  <span class="name">Login with valid email and password</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -145,7 +148,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.openBrowser()</span>
                         
-  <span class="lead-duration duration">3s 353ms</span>
+  <span class="lead-duration duration">3s 703ms</span>
 
           </div>
 
@@ -180,7 +183,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am at talentTEK Home Page</span>
   
-  <span class="lead-duration duration">437ms</span>
+  <span class="lead-duration duration">022ms</span>
 
   </div>
 
@@ -199,9 +202,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on Create New Account button</span>
+  <span class="name">I enter valid email address</span>
   
-  <span class="lead-duration duration">210ms</span>
+  <span class="lead-duration duration">362ms</span>
 
   </div>
 
@@ -220,43 +223,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I filled out the form using the following data table</span>
+  <span class="name">I enter invalid password</span>
   
-  <span class="lead-duration duration">358ms</span>
-
-  </div>
-
-        
-
-
-                  <table class="step-arguments">
-                          <tr>
-                                  <td>Ashif</td>
-                                  <td>Uzzaman</td>
-                                  <td>auzzaman@auzzaman.com</td>
-                                  <td>Test1234</td>
-                                  <td>Test1234</td>
-                                  <td>Feb</td>
-                                  <td>7</td>
-                                  <td>1987</td>
-                                  <td>Male</td>
-                              </tr>
-                      </table>
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I clicked on agree checkbox</span>
-  
-  <span class="lead-duration duration">054ms</span>
+  <span class="lead-duration duration">219ms</span>
 
   </div>
 
@@ -274,10 +243,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click Create My Account button</span>
+  <span class="keyword indention">When</span>
+  <span class="name">I click on Log In button</span>
   
-  <span class="lead-duration duration">056ms</span>
+  <span class="lead-duration duration">157ms</span>
 
   </div>
 
@@ -295,10 +264,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">I will store the dynamic studentId</span>
+  <span class="keyword indention">Then</span>
+  <span class="name">I will verify I successfully logged into my existing account</span>
   
-  <span class="lead-duration duration">45s 106ms</span>
+  <span class="lead-duration duration">45s 036ms</span>
 
   </div>
 
@@ -310,19 +279,20 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='success_message']/div"}
-  (Session info: chrome=89.0.4389.114)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/h5"}
+  (Session info: chrome=89.0.4389.128)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-CEGNB58', ip: '192.168.1.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+System info: host: 'Hassans-MBP.lan', ip: '2603:7000:c803:f9f3:0:0:0:1415%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ASHIF-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 024143291739058cb9d32adcf9192767
-*** Element info: {Using=xpath, value=//*[@id='success_message']/div}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/04/g7v8kdcn5g3...}, goog:chromeOptions: {debuggerAddress: localhost:56755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 685df88ba36f97a17a293883c61a7f28
+*** Element info: {Using=xpath, value=//*[@id='profile_form']/h5}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -335,98 +305,14 @@ Session ID: 024143291739058cb9d32adcf9192767
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.getText(Unknown Source)
-	at pageObject.Signup_page.getStudentId(Signup_page.java:140)
-	at stepDef.Signup_steps.iWillStoreTheDynamicStudentId(Signup_steps.java:47)
-	at ✽.I will store the dynamic studentId(file:///C:/Users/Ashif-Desktop/Documents/GitHub/Aug2020_FW/src/test/java/features/login/login_parameterization.feature:11)
+	at com.sun.proxy.$Proxy21.getText(Unknown Source)
+	at pageObject.Profile_page.verifyIamInProfilePage(Profile_page.java:33)
+	at stepDef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount(Profile_steps.java:13)
+	at ✽.I will verify I successfully logged into my existing account(file:///Users/hbhuiyan/Documents/TalentTEK/git/Aug2020_FW/src/test/java/features/login/login.feature:25)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I click on Login Link</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I login with newly created studentId Info</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">I click on Log In button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">I will verify my profile info</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
 
 
         
@@ -461,7 +347,7 @@ Session ID: 024143291739058cb9d32adcf9192767
             <span class="keyword indention">After</span>
                           <span class="location name">stepDef.Hook.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">380ms</span>
+  <span class="lead-duration duration">479ms</span>
 
           </div>
 
@@ -471,261 +357,15 @@ Session ID: 024143291739058cb9d32adcf9192767
           
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1931239441" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-529091517" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1931239441.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_-529091517.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_-1931239441" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1931239441.png"></span>
+    <div id="embedding_embedding_-529091517" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-529091517.png"></span>
     </div>
   </div>
         </div>
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <a href="file-src-test-java-features-login-login_parameterization-feature.html">View Feature</a> <i>Login with Parameters</i>
-    </div>
-  
-  
-<div class="tags indention">
-       <a href="Parameters.html">@Parameters</a>
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">As a user I can enter values in Gerkin syntax to use in the StepDef</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-6" class="collapse collapsable-details  in ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-7" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">stepDef.Hook.openBrowser()</span>
-                        
-  <span class="lead-duration duration">2s 602ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am at talentTEK Home Page</span>
-  
-  <span class="lead-duration duration">394ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter valid "test@test.com" Email</span>
-  
-  <span class="lead-duration duration">077ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter valid password "Test123"</span>
-  
-  <span class="lead-duration duration">071ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I click on Log In button</span>
-  
-  <span class="lead-duration duration">058ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I will verify I successfully logged into my existing account</span>
-  
-  <span class="lead-duration duration">16s 007ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Error message</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id='profile_form']/h5
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-CEGNB58', ip: '192.168.1.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.getText(Unknown Source)
-	at pageObject.Profile_page.verifyIamInProfilePage(Profile_page.java:33)
-	at stepDef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount(Profile_steps.java:12)
-	at ✽.I will verify I successfully logged into my existing account(file:///C:/Users/Ashif-Desktop/Documents/GitHub/Aug2020_FW/src/test/java/features/login/login_parameterization.feature:24)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-10" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">stepDef.Hook.tearDown(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">001ms</span>
-
-          </div>
-
-                      
-
-          
-          
 
         </div>
           </div>
