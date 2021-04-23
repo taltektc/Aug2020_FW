@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Aug2020_FW" />
+        <module name="NewCICDProject" />
       </profile>
     </annotationProcessing>
   </component>

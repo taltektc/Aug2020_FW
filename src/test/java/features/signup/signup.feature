@@ -1,6 +1,7 @@
 Feature: Signup
 
-  @regression @smoke @signup
+  @regression @smoke @signup @sadia
+
   Scenario: Sign up
     Given I am at talentTEK Home Page
     And I click on Create New Account button

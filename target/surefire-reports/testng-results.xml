@@ -1,82 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-18T10:46:23 EDT" name="Surefire suite" finished-at="2021-04-18T10:47:14 EDT" duration-ms="50567">
+  <suite started-at="2021-04-22T22:18:30 EDT" name="Surefire suite" finished-at="2021-04-22T22:18:37 EDT" duration-ms="6700">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@2df32bf7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-04-18T10:46:23 EDT" name="Surefire test" finished-at="2021-04-18T10:47:14 EDT" duration-ms="50567">
+    <test started-at="2021-04-22T22:18:30 EDT" name="Surefire test" finished-at="2021-04-22T22:18:37 EDT" duration-ms="6700">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-18T10:46:23 EDT" name="setUpClass" finished-at="2021-04-18T10:46:24 EDT" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-22T22:18:30 EDT" name="setUpClass" finished-at="2021-04-22T22:18:31 EDT" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-18T10:46:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-18T10:47:14 EDT" duration-ms="50126" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-22T22:18:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-04-22T22:18:37 EDT" duration-ms="6200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid email and password"]]>
+                <![CDATA["Sign up"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login]"]]>
+                <![CDATA["Optional[Signup]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/h5"}
-  (Session info: chrome=89.0.4389.128)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hassans-MBP.lan', ip: '2603:7000:c803:f9f3:0:0:0:1415%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/04/g7v8kdcn5g3...}, goog:chromeOptions: {debuggerAddress: localhost:56755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 685df88ba36f97a17a293883c61a7f28
-*** Element info: {Using=xpath, value=//*[@id='profile_form']/h5}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='profile_form']/h5"}
-  (Session info: chrome=89.0.4389.128)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Hassans-MBP.lan', ip: '2603:7000:c803:f9f3:0:0:0:1415%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/04/g7v8kdcn5g3...}, goog:chromeOptions: {debuggerAddress: localhost:56755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 685df88ba36f97a17a293883c61a7f28
-*** Element info: {Using=xpath, value=//*[@id='profile_form']/h5}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy21.getText(Unknown Source)
-at pageObject.Profile_page.verifyIamInProfilePage(Profile_page.java:33)
-at stepDef.Profile_steps.iWillVerifyISuccessfullyLoggedIntoMyExistingAccount(Profile_steps.java:13)
-at ✽.I will verify I successfully logged into my existing account(file:///Users/hbhuiyan/Documents/TalentTEK/git/Aug2020_FW/src/test/java/features/login/login.feature:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-18T10:47:14 EDT" name="tearDownClass" finished-at="2021-04-18T10:47:14 EDT" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@2df32bf7]" started-at="2021-04-22T22:18:37 EDT" name="tearDownClass" finished-at="2021-04-22T22:18:37 EDT" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
